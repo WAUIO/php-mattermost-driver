@@ -187,7 +187,7 @@ class UserModel extends AbstractModel
      */
     public function getUsersByUsernames(array $requestOptions)
     {
-        return $this->client->post(self::$endpoint . '/usernames/', $requestOptions);
+        return $this->client->post(self::$endpoint . '/usernames', $requestOptions);
     }
 
     /**
